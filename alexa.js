@@ -1,18 +1,14 @@
-// top
-
-const Alexa = require('ask-sdk-core');
+// at the top our variables
 let userChoice;
 let computerChoice;
 let gameAnswer;
 let catState;
 
-// launch
+// launch handler change
+const speakOutput = 'Welcome to rock paper scissors cat 2023!';
 
-const speakOutput = 'Welcome to rock paper scissors cat 2022!';
 
-
-// userpick
-
+// userpick handler
 const UserPickIntentHandler = {
     canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === 'IntentRequest'
