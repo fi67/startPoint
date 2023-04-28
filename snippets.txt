@@ -9,6 +9,8 @@ let catState;
 // run the setup function
 setupWebInput();
 
+_______________________________________________
+
 //Slide 16 - set up the inputs
 function setupWebInput() {
     let choices = document.getElementsByClassName("choice");
@@ -21,6 +23,7 @@ function setupWebInput() {
         choices[i].addEventListener("click", userPick);
     }
 }
+______________________________________________________
 
 //Slide 17 - get the user choice which starts the game
 
@@ -29,6 +32,8 @@ function userPick(evt) {
     console.log(userChoice);
     playGame();
 }
+
+____________________________________________________
 
 //Slide 18 set up the game logic (play the game) and call the output
 
@@ -83,9 +88,13 @@ function playGame() {
     userOutput()
 }
 
+
+
+____________________________________________________________
+
 //Slide 19 - display the output
 
-function userOutput() {
+ function userOutput() {
     if ((userChoice === "cat") || (computerChoice ==="cat")) {
         let myAudio = document.getElementById("myAudio");
         let myCatAudio = "";
@@ -102,3 +111,23 @@ function userOutput() {
        let winner = document.getElementById("winner");
        winner.innerHTML = gameAnswer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
