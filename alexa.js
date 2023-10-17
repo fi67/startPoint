@@ -5,7 +5,7 @@ let gameAnswer;
 let catState;
 
 // launch handler change
-const speakOutput = 'Welcome to rock paper scissors cat 2023!';
+const speakOutput = 'Welcome to rock paper scissors cat 2023! You can say rock, paper, scissors or cat';
 
 
 // userpick handler
