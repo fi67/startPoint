@@ -11,9 +11,9 @@ setupWebInput();
 
 //Slide 16 - set up the inputs
 function setupWebInput() {
-    let choices = document.getElementsByClassName("choice");
-    let cat = document.getElementById("cat");
-    let elephant = document.getElementById("elephant");
+    const choices = document.getElementsByClassName("choice");
+    const cat = document.getElementById("cat");
+    const elephant = document.getElementById("elephant");
 
     cat.addEventListener("click", userPick);
     elephant.addEventListener("click", userPick);
@@ -33,7 +33,7 @@ function userPick(evt) {
 //Slide 18 set up the game logic (play the game) and call the output
 
 function playGame() {
-    let answers = ["rock", "paper", "scissors", "cat"];
+    const answers = ["rock", "paper", "scissors", "cat"];
     computerChoice = answers[Math.floor(Math.random() * 4)];
     console.log(computerChoice);
     catState = 2;
@@ -87,7 +87,7 @@ function playGame() {
 
 function userOutput() {
     if ((userChoice === "cat") || (computerChoice ==="cat")) {
-        let myAudio = document.getElementById("myAudio");
+        const myAudio = document.getElementById("myAudio");
         let myCatAudio = "";
         
          if (catState === 1) {
@@ -99,6 +99,6 @@ function userOutput() {
           myAudio.addEventListener("canplaythrough", function(){myAudio.play()});
        }
       
-       let winner = document.getElementById("winner");
+       const winner = document.getElementById("winner");
        winner.innerHTML = gameAnswer;
 }
